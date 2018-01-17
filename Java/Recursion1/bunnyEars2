@@ -1,0 +1,13 @@
+public int bunnyEars2(int bunnies) {
+  
+  if (bunnies%2==0 && bunnies>0) {
+      return 3+bunnyEars2(bunnies-1);
+  }
+  else if (bunnies%2==1 && bunnies>0) {
+      return 2+bunnyEars2(bunnies-1);   
+  }
+  else {
+    return 0;
+  }
+ // noctice the order the else statement to make this method run correctly!!! 
+}
